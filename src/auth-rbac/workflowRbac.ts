@@ -1,6 +1,6 @@
 import { ActorRole, WorkflowPermission } from '../types/rbac';
 import { WorkflowStepId } from '../types/workflow';
-import { canWorkflow, AUCTION_ROLES } from './auctionRbac';
+import { canWorkflow } from './auctionRbac';
 
 // Maps each step to the WorkflowPermission that gates it
 export const STEP_PERMISSION_MAP: Record<WorkflowStepId, WorkflowPermission> = {
